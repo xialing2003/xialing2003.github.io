@@ -14,7 +14,7 @@ My advisor is [Prof. Allan M. Rubin](https://geosciences.princeton.edu/people/al
 
 You can find my CV here: [Ling Xia's CV](https://xialing2003.github.io/files/CV_Ling_Xia_Nov_2024.pdf)
 
-My E-mail: lx4572@princeton.edu
+My E-mail is: lx4572@princeton.edu
 
 Feel free to contact me!
 
