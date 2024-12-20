@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Ling Xia"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Ling Xia"
 description              : &description "personal description"
@@ -24,19 +24,19 @@ author:
   avatar           : "profile.png"
   name             : "Ling Xia"
   pronouns         : "she/her"  
-  bio              : "enjoy!"
+  bio              : # "enjoy!"
   location         : "Earth"
   employer         : "Red Brick University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "lx4572@princeton.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : #"http://orcid.org/yourorcidurl"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
 
