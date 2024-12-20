@@ -12,7 +12,7 @@ Hello! I am Ling Xia(夏灵), a graduate student from [The Geosciences Departmen
 My research interests include **SSE** (slow slip events), **LFE** (low frequency events), and **ETS** (episodic tremorand slip). 
 My advisor is [Prof. Allan M. Rubin](https://geosciences.princeton.edu/people/allan-m-rubin)
 
-You can find my CV here: [Ling Xia's CV](https://github.com/xialing2003/xialing2003.github.io/blob/master/files/CV_Ling_Xia_Nov_2024.pdf)
+You can find my CV here: [Ling Xia's CV](https://xialing2003.github.io/files/CV_Ling_Xia_Nov_2024.pdf))
 
 My E-mail: lx4572@princeton.edu
 
