@@ -13,7 +13,7 @@ My research interests include slow slip events, low frequency events, and tremor
 
 You can find my CV here:[Ling Xia's CV](https://github.com/xialing2003/xialing2003.github.io/blob/master/files/CV_Ling_Xia_Nov_2024.pdf)
 
-### News
+## News
 
 09/2024
 I started my graduate program at Princeton University.
