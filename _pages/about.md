@@ -11,10 +11,10 @@ Hello! I am Ling Xia(夏灵), a graduate student from [The Geosciences Departmen
 
 My research interests include slow slip events, low frequency events, and tremor. My advisor is [Prof. Allan M. Rubin](https://geosciences.princeton.edu/people/allan-m-rubin)
 
-You can find my CV here:[Ling Xia's CV](https://github.com/xialing2003/xialing2003.github.io/blob/master/files/CV_Ling_Xia_Nov_2024.pdf)
+You can find my CV here: [Ling Xia's CV](https://github.com/xialing2003/xialing2003.github.io/blob/master/files/CV_Ling_Xia_Nov_2024.pdf)
 
+My E-mail: lx4572@princeton.edu
 Feel free to contact me!
-lx4572@princeton.edu
 
 ## News
 
