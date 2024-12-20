@@ -12,7 +12,7 @@ redirect_from:
 ## Education
 
 * Ph.D in Geosciences, Princeton University, 2030 (expected)
-* B.S. in geophysics, University of Science and Technology of China, 2024
+* B.S. in geophysics, University of Science and Technology of China(USTC), 2024
   
 ## Skills
 
