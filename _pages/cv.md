@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-pdf
+pdf: [Ling Xia's CV](https://xialing2003.github.io/files/CV_Ling_Xia_Nov_2024.pdf)
 
 Education
 ====
