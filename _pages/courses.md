@@ -31,8 +31,9 @@ data analysis
   Section 9 for MCMC inference        
 
 * Statistical Foundations of Data Science
+[textbook link](https://fan.princeton.edu/sites/g/files/toruqf5476/files/documents/chapters1-3.pdf)
+[course link](http://fan.princeton.edu/525.html)
 
   A theoretical introduction to statistical machine learning for data science. It covers multiple regression, kernel learning, sparse regression, high dimensional statistics, sure independent screening, generalized linear models, covariance learning, factor models, principal component analysis, supervised and unsupervised learning, deep learning, and related topics such as community detection, item ranking, and matrix completion.These methods are illustrated using real world data sets and manipulation of the statistical software R.
   
-[textbook link](https://fan.princeton.edu/sites/g/files/toruqf5476/files/documents/chapters1-3.pdf)
-[course link](http://fan.princeton.edu/525.html)
+
