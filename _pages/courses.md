@@ -41,5 +41,5 @@ data analysis
   
   This course covers fundamental topics in probabilistic modeling, an important area of machine learning research. We learn how to model data and develop algorithms to learn the structure underlying these data for the purpose of prediction and decision-making. We cover several model classes--conditional and unconditional models--and several inference algorithms, including variational inference, the algorithm behind variational auto-encoders. At the end of the course, students should be well-equipped to come up with a probabilistic model and inference algorithm for their data, and use the fitted model for tasks of interest.
 
-* ECE 533/MAE 575 Data Assimilation
+* ECE 533/MAE 575 Data Assimilation        
   This course covers the theory and numerical algorithms of nonlinear filtering and smoothing, starting with the discrete-time linear Gaussian case and advancing through the general continuous-time nonlinear non-Gaussian case. Variants of Kalman and ensemble methods will be covered with derivations and sketches of important proofs. A review of the necessary elements from probability and stochastic processes is included. Following the theory, numerical algorithms are regularly demonstrated on a suite of problems that include aerospace and geoscience applications.
