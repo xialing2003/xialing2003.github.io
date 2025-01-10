@@ -35,5 +35,8 @@ data analysis
 [course link](http://fan.princeton.edu/525.html)
 
   A theoretical introduction to statistical machine learning for data science. It covers multiple regression, kernel learning, sparse regression, high dimensional statistics, sure independent screening, generalized linear models, covariance learning, factor models, principal component analysis, supervised and unsupervised learning, deep learning, and related topics such as community detection, item ranking, and matrix completion.These methods are illustrated using real world data sets and manipulation of the statistical software R.
-  
 
+* COS513: Foundations of Probabilistic Modeling
+  [course link](https://www.cs.princeton.edu/courses/archive/fall10/cos513/#sec-1)
+  
+  This course covers fundamental topics in probabilistic modeling, an important area of machine learning research. We learn how to model data and develop algorithms to learn the structure underlying these data for the purpose of prediction and decision-making. We cover several model classes--conditional and unconditional models--and several inference algorithms, including variational inference, the algorithm behind variational auto-encoders. At the end of the course, students should be well-equipped to come up with a probabilistic model and inference algorithm for their data, and use the fitted model for tasks of interest.
