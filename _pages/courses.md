@@ -25,10 +25,10 @@ data analysis
 
   This course is about building models to explain the observed data, and improving models based on error analysis. 
 
-Sections 1 and 2 on the basics of probabilistic modeling including linear regression     
-Sections 3.1 for Bayesian models       
-Section 4 - 4.2 for error propagation and parameter uncertainties           
-Section 9 for MCMC inference        
+  Sections 1 and 2 on the basics of probabilistic modeling including linear regression     
+  Sections 3.1 for Bayesian models       
+  Section 4 - 4.2 for error propagation and parameter uncertainties           
+  Section 9 for MCMC inference        
 
 * Statistical Foundations of Data Science
 
