@@ -19,3 +19,13 @@ This course teaches basic tools and principles of writing good code, in the cont
 
 data analysis
 -----
+
+* Modern Statistics
+[course link](https://sml505.pmelchior.net/Introduction.html)
+
+This course is about building models to explain the observed data, and improving models based on error analysis. 
+
+Sections 1 and 2 on the basics of probabilistic modeling including linear regression
+Sections 3.1 for Bayesian models
+Section 4 - 4.2 for error propagation and parameter uncertainties
+Section 9 for MCMC inference
