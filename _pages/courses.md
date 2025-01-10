@@ -4,7 +4,7 @@ title: "course links"
 permalink: /courses/
 author_profile: true
 redirect_from:
-  - /resume
+  - /courses
 ---
 
 {% include base_path %}
