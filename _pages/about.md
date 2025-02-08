@@ -24,4 +24,4 @@ Feel free to contact me!
 I started my graduate program at Princeton University.
 
 07/2024
-I completed my undergraduate studies at the University of Science and Technology of China (USTC).
+I completed my undergraduate studies at USTC.
