@@ -19,3 +19,6 @@ main:
 
   - title: "course links"
     url: /courses/
+
+  - title: "general reading"
+    url: /general/
