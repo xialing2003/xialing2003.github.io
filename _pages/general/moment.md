@@ -13,7 +13,7 @@ We can understand the moment tensor matrix through comparing it with the stress 
 ![moment tensor figure](moment/stress-and-moment-tensors.png)
 
 ## How it relates to beachball
-More commonly used representation of focal mechanisms is the seismic beachballs. Initially, people calculate the beachball through the direction of P wave first arrivals observed in stations. If an earthquake happens, we treat its location as the origion and build spherical coordinates. The stations are located at an azimuth with respect to this event, and we can use $(\theta, \phi)$ to discribe the azimuth of stations. 
+More commonly used representation of focal mechanisms is the seismic beachballs. Initially, people obtain the beachball through the direction of P wave first arrivals observed in stations. If an earthquake happens, we treat its location as the origion and build spherical coordinates. The stations are located at an azimuth with respect to this event, and we can use $(\theta, \phi)$ to discribe the azimuth of stations. If we observe a positive P-wave first arrival, we plot a black dot there and a white dot vice versa. People found that the entire sphere is devided into four parts with two postive(black, representing tension) and two negative(white, representing compression). 
 
 ## Source time function
 
