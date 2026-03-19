@@ -3,6 +3,7 @@ layout: archive
 title: "Seismic moment"
 permalink: /general/moment
 author_profile: true
+mathjax: true
 ---
 
 {% include base_path %}
