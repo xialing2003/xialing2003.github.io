@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "general reading"
+title: "General Reading"
 permalink: /general/
 author_profile: true
 redirect_from:
@@ -16,3 +16,4 @@ These are notes for my general exam.
 
 # Specific topics
 1. Griffith fracture energy
+2. Seismic moment [Notes](general/moment.md)
