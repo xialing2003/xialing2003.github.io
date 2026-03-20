@@ -42,13 +42,16 @@ $$
 
 Since the earthquake source is described by a douple couple force. The displacement induced by an earthquake at the station should have the following equation. 
 $$
-u_i(\mathbf{x}, t) = G_{ij}(\mathbf{x}, t; \mathbf{x}_0, t_0) f_j(\mathbf{x}_0, t_0) - G_{ij}(\mathbf{x}, t; \mathbf{x}_0 - \hat{\mathbf{x}}_k d, t_0) f_j(\mathbf{x}_0, t_0)
+\begin{aligned}
+u_i(\mathbf{x}, t) &= G_{ij}(\mathbf{x}, t; \mathbf{x}_0, t_0) f_j(\mathbf{x}_0, t_0) - G_{ij}(\mathbf{x}, t; \mathbf{x}_0 - \hat{\mathbf{x}}_k d, t_0) f_j(\mathbf{x}_0, t_0) \\
+&= \frac{\partial G_{ij}(\mathbf{x}, t; \mathbf{x}_0, t_0)}{\partial (x_0)_k} f_j(\mathbf{x}_0, t_0) d
+\end{aligned}
 $$
 
 The force vectors $f_j$ are separated by a distance $d$ in the $$\hat{\mathbf{x}}_k$$ direction. The product $f_j d$ is the $k$th column of $M_{jk}$ and thus
 
 $$
-u_i(\mathbf{x}, t) = \frac{\partial G_{ij}(\mathbf{x}, t; \mathbf{x}_0, t_0)}{\partial (x_0)_k} M_{jk}(\mathbf{x}_0, t_0), \tag{9.5}
+u_i(\mathbf{x}, t) = \frac{\partial G_{ij}(\mathbf{x}, t; \mathbf{x}_0, t_0)}{\partial (x_0)_k} M_{jk}(\mathbf{x}_0, t_0)
 $$
 
 Green's function is elegant in the theory. However, since a perfect delta function never exists, solving the delta function and then applying a convolution unavoidably introduce bias. Therefore, people choose to solve the wave equation directly because this is computationally equivalent to solving Green's function. 
