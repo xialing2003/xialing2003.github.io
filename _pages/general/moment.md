@@ -41,6 +41,7 @@ u_i(\textbf{x}, t) = G_{ij}(\textbf{x}, t;\textbf{x}_0, t_0)f_j(\textbf{x}_0, t_
 $$
 
 Since the earthquake source is described by a douple couple force. The displacement induced by an earthquake at the station should have the following equation. 
+
 $$
 \begin{aligned}
 u_i(\mathbf{x}, t) &= G_{ij}(\mathbf{x}, t; \mathbf{x}_0, t_0) f_j(\mathbf{x}_0, t_0) - G_{ij}(\mathbf{x}, t; \mathbf{x}_0 - \hat{\mathbf{x}}_k d, t_0) f_j(\mathbf{x}_0, t_0) \\
@@ -55,6 +56,10 @@ u_i(\mathbf{x}, t) = \frac{\partial G_{ij}(\mathbf{x}, t; \mathbf{x}_0, t_0)}{\p
 $$
 
 Green's function is elegant in the theory. However, since a perfect delta function never exists, solving the delta function and then applying a convolution unavoidably introduce bias. Therefore, people choose to solve the wave equation directly because this is computationally equivalent to solving Green's function. 
+
+Now the remaining question becomes, if I know the moment tensor matrix (which really only provides the information of the direction, $$(\hat{M_{xy}}, \hat{M_{yz}}, \hat{M_{zx}})$$) and the source time function, how can I obtain $f_x(t)$, $f_y(t)$, and $f_z(t)$. This goes back to the first figure, where every element in the moment tensor matrix is defined as the force times the distance between forces. At any time $t$, with 6 unknows (3 forces and 3 distances) and 3 equations (known $M_{xy}$, $M_{yz}$, $M_{zx}$), it looks like we need to use the grid size as the force distance. Acoording to Saint-Venant theorem, this humanly introduced distance won't influence the slip displacement far field. This is because the forces occur in couple with different directions while the moment remains the same. 
+
+A final thing I want to mention is that, from earthquake observations, the slip direction typically remains the same during an earthquake. Therefore, we can probably treat $$(\hat{M_{xy}}, \hat{M_{yz}}, \hat{M_{zx}})$$ constant with time. If the slip direction changes with time, rotation energy occurs. SPECFEM is the first software that can process the change of the slip direction, which realizes this function recently, while right now it is only applicable to a small angle. 
 
 
 [1] https://mxrap.com/theory/moment-tensor-guide/
