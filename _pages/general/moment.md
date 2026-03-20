@@ -30,10 +30,29 @@ Whichever the moment tensor matrix or the beachball representation looks at the 
 
 ## How to simulate the displacement function observed in one station?
 
-A traditional way to calculate the displacement function at one station is using Green function. The wave propagation function is written as
+A traditional way to calculate the displacement function at one station is using Green's function. The wave propagation function is written as
 $$
 \rho(\mathbf{x}) \frac{\partial^2 u_i}{\partial t^2} = \partial_j \left[ \lambda(\mathbf{x}) \delta_{ij} \partial_k u_k + \mu(\mathbf{x}) (\partial_j u_i + \partial_i u_j) \right] + f_i
 $$
+
+Green's function looks at the displacement at point $x$ that results from the unit force function applied at point $x_0$, which can be written as
+$$
+u_i(\textbf{x}, t) = G_{ij}(\textbf{x}, t;\textbf{x}_0, t_0)f_j(\textbf{x}_0, t_0)
+$$
+
+Since the earthquake source is described by a douple couple force. 
+$$
+\begin{aligned}
+u_i(\mathbf{x}, t) &= G_{ij}(\mathbf{x}, t; \mathbf{x}_0, t_0) f_j(\mathbf{x}_0, t_0) - G_{ij}(\mathbf{x}, t; \mathbf{x}_0 - \hat{\mathbf{x}}_k d, t_0) f_j(\mathbf{x}_0, t_0) \\
+&= \frac{\partial G_{ij}(\mathbf{x}, t; \mathbf{x}_0, t_0)}{\partial (x_0)_k} f_j(\mathbf{x}_0, t_0) d, \tag{9.4}
+\end{aligned}
+$$
+
+$$
+u_i(\mathbf{x}, t) = \frac{\partial G_{ij}(\mathbf{x}, t; \mathbf{x}_0, t_0)}{\partial (x_0)_k} M_{jk}(\mathbf{x}_0, t_0), \tag{9.5}
+$$
+
+Green's function is elegant in the theory. However, since a perfect delta function never exists, solving the delta function and then applying a convolution unavoidably introduce bias. Therefore, people choose to solve the wave equation directly because this is computationally equivalent to solving Green's function. 
 
 
 [1] https://mxrap.com/theory/moment-tensor-guide/
