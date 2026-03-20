@@ -27,9 +27,13 @@ Whichever the moment tensor matrix or the beachball representation looks at the 
 
 ![sourcetime](moment/source_time_function.png)
 
-A traditional way to calculate the 
 
 ## How to simulate the displacement function observed in one station?
+
+A traditional way to calculate the displacement function at one station is using Green function. The wave propagation function is written as
+$$
+\rho(\mathbf{x}) \frac{\partial^2 u_i}{\partial t^2} = \partial_j \left[ \lambda(\mathbf{x}) \delta_{ij} \partial_k u_k + \mu(\mathbf{x}) (\partial_j u_i + \partial_i u_j) \right] + f_i
+$$
 
 
 [1] https://mxrap.com/theory/moment-tensor-guide/
