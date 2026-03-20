@@ -63,3 +63,5 @@ A final thing I want to mention is that, from earthquake observations, the slip 
 
 
 [1] https://mxrap.com/theory/moment-tensor-guide/
+[2] http://scardec.projects.sismo.ipgp.fr/
+[3] Shearer, Peter M. Introduction to seismology. Cambridge university press, 2019.
