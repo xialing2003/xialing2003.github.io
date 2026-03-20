@@ -23,7 +23,11 @@ More commonly used representation of focal mechanisms is the seismic beachballs.
 It is also feasible to build a bridge between the beachball representation and the moment tensor matrix. If we want to know whether a point on the beachball, quantified by $(\theta, \phi)$ is positive or negative, we can calculate it as $n^T M n$ with $n = (sin\theta cos\phi, sin\theta sin \phi, cos\theta)^T$ and $M$ the moment tensor matrix. Therefore, I think the beach ball can probably be better represented with not only positive or negative, but also the exact value. 
 
 ## Source time function
-Whichever the moment tensor matrix or the beachball representation looks at the total released moment and slip amout. If we want a more precise description, we should look at how the moment releases with time, namely the moment rate function. 
+Whichever the moment tensor matrix or the beachball representation looks at the total released moment and slip amout. If we want a more precise description, we should look at how the moment releases with time, namely the moment rate function. The following figure shows an example of the moment rate function. 
+
+![sourcetime](moment/source_time_function.png)
+
+
 
 ## How to simulate the displacement function observed in one station?
 
