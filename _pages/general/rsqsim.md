@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "RSQSim simulations"
-permalink: /general/after
+permalink: /general/rsqsim
 author_profile: true
 mathjax: true
 ---
@@ -10,5 +10,5 @@ mathjax: true
 
 This page should contain    
 (i) the three stages in RSQSim    
-(ii) the transfer condition between stages, or how the system evolves
+(ii) the transfer condition between stages, or how the system evolves   
 (iii) the background in some approximations, including overshoot, decreasing a, no stress change caused by nucleation
