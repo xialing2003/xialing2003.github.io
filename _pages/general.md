@@ -18,3 +18,6 @@ Treatise on Geophysics [Links](https://www.sciencedirect.com/referencework/97804
 1. Griffith fracture energy [Notes](general/Griffith.md)
 2. Seismic moment [Notes](general/moment.md)
 3. RSQSim simulations [Notes](general/rsqsim.md)
+4. Aftershock [Notes](general/after.md)
+5. Free oscillations
+6. 

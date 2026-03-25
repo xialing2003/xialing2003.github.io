@@ -62,8 +62,6 @@ Now the remaining question becomes, if I know the moment tensor matrix (which re
 A final thing I want to mention is that, from earthquake observations, the slip direction typically remains the same during an earthquake. Therefore, we can probably treat $$(\hat{M_{xy}}, \hat{M_{yz}}, \hat{M_{zx}})$$ constant with time. If the slip direction changes with time, rotation energy occurs. SPECFEM is the first software that can process the change of the slip direction, which realizes this function recently, while right now it is only applicable to a small angle. 
 
 
-[1] https://mxrap.com/theory/moment-tensor-guide/
-
-[2] http://scardec.projects.sismo.ipgp.fr/
-
+[1] https://mxrap.com/theory/moment-tensor-guide/      
+[2] http://scardec.projects.sismo.ipgp.fr/      
 [3] Shearer, Peter M. Introduction to seismology. Cambridge university press, 2019.
