@@ -20,4 +20,4 @@ Treatise on Geophysics [Links](https://www.sciencedirect.com/referencework/97804
 3. RSQSim simulations [Notes](general/rsqsim.md)
 4. Aftershock [Notes](general/after.md)
 5. Free oscillations
-6. 
+6. Subduction zone [Notes](general/subduction.md)
