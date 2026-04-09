@@ -28,7 +28,7 @@ Treatise on Geophysics [Links](https://www.sciencedirect.com/referencework/97804
 2. Data types for earthquake research and how do we use them
 3. Seismic moment [Notes](general/moment.md) **finished!**
 4. Friction (elastic vs elastic plastic host rock; Coulomb; rate-state)
-5. Crack opening criterion
+5. Crack opening criterion [Notes](general/crack.md)
 6. Earthquake simulations(like static models, quasi-dynamic models, and dynamic models)
 7. Triggering mechanisms(like aftershocks, volcano-related seismicity, induced earthquakes)
 
