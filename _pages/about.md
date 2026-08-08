@@ -20,6 +20,16 @@ Feel free to contact me!
 
 ## News
 
+05/2026
+I received the "MyhrvoldHavranek Graduate Fellowship" for the 2026-2027 academic year!
+
+05/2026
+During the department's undergraduate field trip to Hawai'i, I had the opportunity to witness the eruption of Kīlauea during Episode 47 and explore the volcanic landscape firsthand. I observed extensive lava flows and lava tubes, examined a variety of volcanic rocks and mineral crystals, and learned how weathering and other surface processes continually reshape the landscape.
+
+02/2026
+I submitted my first manuscript to JGR: Solid Earth! 
+The title is "A Simple Discrete Elastic Model Exhibits Both the Statistical Properties and Migration Patterns of Slow Slip"
+
 12/2025
 I presented a poster in AGU25 titled "A quasi-static discrete element model that reproduces statistical features and propagation patterns of ETS events"! [pdf](https://xialing2003.github.io/files/AGU25_poster.pdf)
 
