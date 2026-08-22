@@ -199,14 +199,14 @@
 
   <aside class="sidebar">
     <div class="sidebar-top">
-      <img src="photos/self.jpg" alt="Ling Xia" class="profile-photo">
+      <img src="images/self.jpg" alt="Ling Xia" class="profile-photo">
       <h1 class="name">Ling Xia</h1>
       <p class="title">graduate student</p>
       <p class="affiliation">Princeton University</p>
       <nav>
         <a href="#about">About</a>
         <a href="#research">Research</a>
-        <a href="#experience">Experience</a>
+        <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -218,49 +218,66 @@
     <section id="about">
       <h2>About</h2>
       <p>
-        在这里写一段自我介绍：你是谁、做什么方向的工作、大致的背景与兴趣。
-        可以像 <a href="#" target="_blank" rel="noopener">这样插入一个链接</a>，
-        指向你的某篇文章、机构主页或社交账号。
+        Hello!<br>
+        I am a seismologist, and I am interested in the physical mechanims of seismic events, especially tremor and slow slip events. 
+        I am a graduate student in Princeton University and my advisor is Prof. Allan M. Rubin. 
       </p>
-      <figure>
+      <!-- <figure>
         <img src="https://via.placeholder.com/680x360" alt="占位图片，替换为你自己的图片链接或本地文件路径">
         <figcaption>图片说明文字，例如拍摄地点或项目名称</figcaption>
-      </figure>
+      </figure> -->
     </section>
 
-    <section id="work">
-      <h2>Work</h2>
+    <section id="research">
+      <h2>Research</h2>
 
       <div class="entry">
-        <h3 class="entry-title">项目 / 研究方向一</h3>
+        <h3 class="entry-title">Slow slip modeling</h3>
         <p>
-          用一到两段话介绍这个项目：背景、你做了什么、有什么结果。
-          可以在文字里穿插 <a href="#" target="_blank" rel="noopener">相关论文或项目链接</a>。
+          I use a simple discrete elastic model to reproduce the migration patterns and statistical properties
+          of slow slip events. Fault elements are either slipping or locked, with locked elements having either 
+          a fully healed static strength or a reduced static strength if they slipped recently. The slip rate is
+          set to be a constant. The model can generate characteristic events with recurrence intervals of about 
+          1 year and propagation speeds of about 10 km/day, consistent with observations and with analytical 
+          estimates derived from fracture mechanics. This model also reproduces stochastic properties of Brownian
+          models, with a simplified stochastic linear birth-death model developed to explain the observed 
+          proportionality between radiated energy rate and moment rate.
         </p>
+        <p><a href="https://doi.org/10.22541/essoar.177249008.89007734/v1" target="_blank" rel="noopener">Read the full paper →</a></p>
       </div>
 
       <div class="entry">
-        <h3 class="entry-title">项目 / 研究方向二</h3>
+        <h3 class="entry-title">RSQSim simulations</h3>
         <p>
-          同样的结构，方便你复制粘贴增加更多条目。图片是可选的，
-          没有图片时可以直接省略 <code>&lt;figure&gt;</code> 部分。
+          Different from the binary slipping/locked models, all the fault elements evolve following the rate and 
+          state friction law. The new simulation considers logarithmic-with-time fault re-strengthening when “locked”, 
+          and exponential self-acceleration to instability during nucleation. The RSQSim simulations have the potential 
+          to better reproduce the backward propagation patterns and the intermittency observed in seismic records. 
         </p>
       </div>
 
     </section>
 
-    <section id="writing">
-      <h2>Writing</h2>
-      <ul class="plain">
-        <li><a href="#" target="_blank" rel="noopener">文章标题一</a> — 简短说明发表在哪里</li>
-        <li><a href="#" target="_blank" rel="noopener">文章标题二</a> — 简短说明发表在哪里</li>
-      </ul>
-    </section>
+    <section id="resume">
+    <h2>Resume</h2>
+    <p>
+      <a href="files/CV_Ling_Xia_April_2026.pdf" target="_blank" rel="noopener">Open in new tab ↗</a>
+    </p>
+    <iframe src="CV_Ling_Xia_April_2026.pdf" width="100%" height="700px" style="border:1px solid var(--rule);"></iframe>
+  </section>
 
     <section id="contact" class="contact-block">
       <h2>Contact</h2>
-      <p>your-email@example.com</p>
-      <p><a href="#" target="_blank" rel="noopener">GitHub</a> · <a href="#" target="_blank" rel="noopener">LinkedIn</a> · <a href="#" target="_blank" rel="noopener">ORCID / 个人简历</a></p>
+      <p>ling.xia@princeton.edu</p>
+     <section id="contact" class="contact-block">
+  <h2>Contact</h2>
+  <p>ling.xia@princeton.edu</p>
+  <p>
+    <a href="https://github.com/xialing2003" target="_blank" rel="noopener">GitHub</a> · 
+    <a href="https://www.linkedin.com/in/ling-xia-539ba8321/" target="_blank" rel="noopener">LinkedIn</a> · 
+    <a href="https://orcid.org/0009-0006-9658-0485" target="_blank" rel="noopener">ORCID</a>
+  </p>
+</section>
     </section>
 
   </main>
