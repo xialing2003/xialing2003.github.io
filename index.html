@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>你的名字</title>
+<style>
+  :root{
+    --paper:#fbfaf7;
+    --ink:#2b2a27;
+    --ink-soft:#6b6a63;
+    --rule:#d9d6cd;
+    --accent:#8a6d3b;
+    --sidebar-w:220px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Songti SC",serif;
+    line-height:1.7;
+    font-size:17px;
+  }
+  .layout{
+    display:flex;
+    max-width:920px;
+    margin:0 auto;
+    align-items:flex-start;
+  }
+  aside.sidebar{
+    width:var(--sidebar-w);
+    flex-shrink:0;
+    position:sticky;
+    top:0;
+    height:100vh;
+    padding:64px 20px 40px 24px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+  .sidebar-top h1.name{
+    font-size:1.5rem;
+    font-weight:500;
+    letter-spacing:0.01em;
+    margin:0 0 8px;
+    line-height:1.3;
+  }
+  .sidebar-top .title,
+  .sidebar-top .affiliation{
+    color:var(--ink-soft);
+    font-size:0.92rem;
+    margin:0 0 4px;
+    line-height:1.5;
+  }
+  nav{
+    margin-top:32px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    font-family:"Helvetica Neue",Arial,"PingFang SC",sans-serif;
+    font-size:0.8rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+  }
+  nav a{
+    color:var(--ink-soft);
+    text-decoration:none;
+    padding-left:12px;
+    border-left:2px solid transparent;
+  }
+  nav a:hover, nav a:focus-visible, nav a.active{
+    color:var(--accent);
+    border-left:2px solid var(--accent);
+  }
+  .sidebar-foot{
+    font-family:"Helvetica Neue",Arial,"PingFang SC",sans-serif;
+    font-size:0.72rem;
+    color:var(--ink-soft);
+  }
+  main{
+    flex:1;
+    min-width:0;
+    padding:64px 24px 120px 40px;
+    border-left:1px solid var(--rule);
+  }
+  section{
+    margin-top:0;
+    margin-bottom:64px;
+    scroll-margin-top:24px;
+  }
+  section:first-of-type{
+    margin-top:0;
+  }
+  h2{
+    font-family:"Helvetica Neue",Arial,"PingFang SC",sans-serif;
+    font-size:0.82rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 18px;
+  }
+  h3.entry-title{
+    font-size:1.12rem;
+    font-weight:600;
+    margin:0 0 6px;
+  }
+  p{
+    margin:0 0 14px;
+  }
+  a{
+    color:var(--ink);
+    text-decoration-color:var(--rule);
+    text-underline-offset:3px;
+  }
+  a:hover, a:focus-visible{
+    color:var(--accent);
+    text-decoration-color:var(--accent);
+  }
+  figure{
+    margin:24px 0;
+  }
+  figure img{
+    width:100%;
+    height:auto;
+    display:block;
+    border:1px solid var(--rule);
+  }
+  figcaption{
+    font-family:"Helvetica Neue",Arial,"PingFang SC",sans-serif;
+    font-size:0.78rem;
+    color:var(--ink-soft);
+    margin-top:8px;
+  }
+  .entry{
+    margin-bottom:32px;
+  }
+  ul.plain{
+    padding-left:1.1em;
+    margin:0 0 14px;
+  }
+  ul.plain li{
+    margin-bottom:6px;
+  }
+  .contact-block p{
+    margin:0 0 4px;
+  }
+
+  /* 移动端：侧栏变为顶部横向导航 */
+  @media (max-width:760px){
+    .layout{
+      flex-direction:column;
+    }
+    aside.sidebar{
+      width:100%;
+      position:static;
+      height:auto;
+      padding:36px 20px 20px;
+      border-bottom:1px solid var(--rule);
+    }
+    nav{
+      flex-direction:row;
+      flex-wrap:wrap;
+      gap:4px 16px;
+      margin-top:20px;
+    }
+    nav a{
+      padding-left:0;
+      border-left:none;
+      border-bottom:2px solid transparent;
+      padding-bottom:2px;
+    }
+    nav a:hover, nav a:focus-visible, nav a.active{
+      border-left:none;
+      border-bottom:2px solid var(--accent);
+    }
+    main{
+      padding:36px 20px 90px;
+      border-left:none;
+    }
+    .sidebar-foot{
+      margin-top:24px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <h1 class="name">你的名字</h1>
+      <p class="title">职称 / 身份，例如「博士研究生」</p>
+      <p class="affiliation">单位或所属机构</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="sidebar-foot">© 你的名字</div>
+  </aside>
+
+  <main>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        在这里写一段自我介绍：你是谁、做什么方向的工作、大致的背景与兴趣。
+        可以像 <a href="#" target="_blank" rel="noopener">这样插入一个链接</a>，
+        指向你的某篇文章、机构主页或社交账号。
+      </p>
+      <figure>
+        <img src="https://via.placeholder.com/680x360" alt="占位图片，替换为你自己的图片链接或本地文件路径">
+        <figcaption>图片说明文字，例如拍摄地点或项目名称</figcaption>
+      </figure>
+    </section>
+
+    <section id="work">
+      <h2>Work</h2>
+
+      <div class="entry">
+        <h3 class="entry-title">项目 / 研究方向一</h3>
+        <p>
+          用一到两段话介绍这个项目：背景、你做了什么、有什么结果。
+          可以在文字里穿插 <a href="#" target="_blank" rel="noopener">相关论文或项目链接</a>。
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3 class="entry-title">项目 / 研究方向二</h3>
+        <p>
+          同样的结构，方便你复制粘贴增加更多条目。图片是可选的，
+          没有图片时可以直接省略 <code>&lt;figure&gt;</code> 部分。
+        </p>
+      </div>
+
+    </section>
+
+    <section id="writing">
+      <h2>Writing</h2>
+      <ul class="plain">
+        <li><a href="#" target="_blank" rel="noopener">文章标题一</a> — 简短说明发表在哪里</li>
+        <li><a href="#" target="_blank" rel="noopener">文章标题二</a> — 简短说明发表在哪里</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact-block">
+      <h2>Contact</h2>
+      <p>your-email@example.com</p>
+      <p><a href="#" target="_blank" rel="noopener">GitHub</a> · <a href="#" target="_blank" rel="noopener">LinkedIn</a> · <a href="#" target="_blank" rel="noopener">ORCID / 个人简历</a></p>
+    </section>
+
+  </main>
+
+</div>
+</body>
+</html>
