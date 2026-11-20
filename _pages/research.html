@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Slow slip: elastic and stochastic models — Ling Xia</title>
+<style>
+:root{--bg:#f6f8fa;--panel:#fff;--ink:#14202b;--mute:#5b6b7a;--line:#d9e0e7;--accent:#1f5fbf;--tag:#e8f0fc;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1720;--panel:#16212c;--ink:#e6edf3;--mute:#94a3b3;--line:#263544;--accent:#6aa6ff;--tag:#1b2d47;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1720;--panel:#16212c;--ink:#e6edf3;--mute:#94a3b3;--line:#263544;--accent:#6aa6ff;--tag:#1b2d47;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "Inter","Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header.top{border-bottom:1px solid var(--line);background:var(--panel)}
+.bar{max-width:980px;margin:0 auto;padding:12px 24px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.bar .home{font-weight:600;color:var(--ink)}
+.bar nav{display:flex;gap:14px;flex-wrap:wrap;margin-left:auto}
+button{font:inherit;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:4px 12px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+main{max-width:980px;margin:0 auto;padding:48px 24px 80px}
+h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15;margin:0 0 12px;letter-spacing:-.015em}
+h2{font-size:1.5rem;margin:56px 0 12px;line-height:1.25}
+h3{font-size:1.05rem;margin:0 0 4px}
+p{max-width:70ch;margin:0 0 14px}
+.meta{color:var(--mute);margin-bottom:20px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 8px}
+.btn{display:inline-block;padding:8px 16px;border-radius:8px;border:1px solid var(--accent);color:var(--accent);font-weight:500}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.btn:hover{text-decoration:none;opacity:.85}
+.lead{font-size:1.15rem;color:var(--ink)}
+.media{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;margin:16px 0}
+.media video,.media img{display:block;width:100%;height:auto;border-radius:8px;background:#000}
+.media.sq{max-width:640px}
+figcaption,.cap{color:var(--mute);font-size:.92rem;margin:10px 4px 2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:16px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.card p{margin:4px 0 0;color:var(--mute);font-size:.95rem}
+.num{font-size:1.7rem;font-weight:650;color:var(--accent);line-height:1.2;display:block}
+table{border-collapse:collapse;width:100%;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:.95rem}
+th,td{padding:8px 14px;text-align:left;border-bottom:1px solid var(--line)}
+th{color:var(--mute);font-weight:500}
+tr:last-child td{border-bottom:0}
+.scroll{overflow-x:auto}
+code,.m{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.92em}
+.cite{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.cite p{margin:0}
+footer{max-width:980px;margin:0 auto;padding:24px;color:var(--mute);border-top:1px solid var(--line);font-size:.9rem}
+</style>
+</head>
+<body>
+<header class="top"><div class="bar">
+  <a class="home" href="index.html">Ling Xia</a>
+  <nav>
+    <a href="index.html#research">Research</a>
+    <a href="index.html#publications">Publications</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <button id="theme" aria-label="Toggle dark mode">Dark / Light</button>
+</div></header>
+
+<main>
+  <h1>A simple discrete elastic model of slow slip</h1>
+  <p class="meta">Ling Xia and Allan M. Rubin · Department of Geosciences, Princeton University · <em>Journal of Geophysical Research: Solid Earth</em>, 2026</p>
+
+  <p class="lead">Slow slip events and tremor have been modeled in two separate ways: elastic/frictional models that reproduce how events migrate, and Brownian models that reproduce their statistics. We build one minimal model that does both, and show analytically how the two descriptions connect.</p>
+
+  <div class="btns">
+    <a class="btn primary" href="pdf/xia-rubin-2026-jgr.pdf">Paper (PDF)</a>
+    <a class="btn" href="https://doi.org/10.1029/2026JB034106">DOI</a>
+    <a class="btn" href="pdf/poster.pdf">SCEC poster (PDF)</a>
+    <a class="btn" href="https://doi.org/10.5281/zenodo.18716924">Code (Zenodo)</a>
+  </div>
+
+  <h2>Animation</h2>
+  <figure class="media sq" style="margin-left:0">
+    <video controls loop muted playsinline preload="metadata" poster="assets/animation-poster.jpg">
+      <source src="assets/animation.mp4" type="video/mp4">
+      Your browser does not support embedded video. <a href="assets/animation.mp4">Download the animation</a>.
+    </video>
+    <figcaption>Animation of a simulated slow slip event. Replace this caption with what the viewer should watch for, such as the main front and the backward-propagating secondary fronts.</figcaption>
+  </figure>
+
+  <h2>The model</h2>
+  <p>The fault is a 2D grid of 50 m elements embedded in a 3D elastic medium and driven between two rigid walls 30 km apart. Each element is either locked or slipping at a fixed slow speed <span class="m">V<sub>slip</sub></span>. A locked element starts to slip when its stress reaches its static strength. That strength is <span class="m">τ<sub>p</sub></span> if the element has not slipped in the current event, and a reduced <span class="m">τ′<sub>p</sub> = (1 − ε<sub>D</sub>)τ<sub>p</sub></span> if it has. When an event ends, all strengths return to <span class="m">τ<sub>p</sub></span>.</p>
+  <div class="scroll"><table>
+    <tr><th>Parameter</th><th>Value</th><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Static strength τ<sub>p</sub></td><td>0.3 MPa</td><td>Shear modulus G</td><td>40 GPa</td></tr>
+    <tr><td>Slip speed V<sub>slip</sub></td><td>10<sup>−6</sup> m/s</td><td>Wall separation 2W</td><td>30 km</td></tr>
+    <tr><td>Element size Δx</td><td>50 m</td><td>Loading rate V<sub>pl</sub></td><td>10<sup>−9</sup> m/s</td></tr>
+    <tr><td>Reduced strength ratio ε<sub>D</sub></td><td>0, 0.2, 0.6</td><td>Grid (strike × dip)</td><td>2,400 × 50</td></tr>
+  </table></div>
+
+  <h2>Key results</h2>
+  <div class="grid">
+    <div class="card"><span class="num">~1 yr</span><h3>Recurrence interval</h3><p>Characteristic fault-spanning events recur about once a year, matching analytical fracture-mechanics estimates (minimum ≈ 0.62 yr for ε<sub>D</sub> = 0.6).</p></div>
+    <div class="card"><span class="num">~10 km/day</span><h3>Propagation speed</h3><p>The main front advances at about 9–15 km/day, close to the analytical estimate and to observed tremor migration.</p></div>
+    <div class="card"><span class="num">f<sup>−1</sup></span><h3>Spectral decay</h3><p>The moment-rate amplitude spectrum falls off as f<sup>−1</sup> above a corner near 2×10<sup>−5</sup> Hz, as in Brownian models and observations.</p></div>
+    <div class="card"><span class="num">M̈₀² ∝ Ṁ₀</span><h3>Constant scaled energy</h3><p>Squared moment acceleration is proportional to moment rate, the signature of constant scaled energy.</p></div>
+  </div>
+  <p>A linear birth–death process, with rates computed from the elastic kernel and the reduced strength, explains these statistics. It gives the equilibrium moment rate (1.24×10<sup>11</sup> N·m/s against 1.23×10<sup>11</sup> from the elastic estimate), the corner frequency, and the ratio M̈₀²/Ṁ₀ (1.4×10<sup>7</sup> against 1.3×10<sup>7</sup> N·m/s³ simulated).</p>
+
+  <h3 style="margin-top:28px">What the model does not capture</h3>
+  <p>The simulated scaled energy is about six orders of magnitude lower than observed, and the moment rate is steadier than real tremor. We interpret the fixed V<sub>slip</sub> of order 1 μm/s as an average over a much wider range of slip speeds in nature. Rapid reversals appear, but at speeds up to about 10 times the main front rather than the observed 25–50 times.</p>
+
+  <h2>Poster</h2>
+  <figure class="media" style="margin-left:0">
+    <a href="pdf/poster.pdf"><img src="assets/poster.jpg" alt="SCEC poster: Reproducing some of the statistical properties of tremor using a physical model" loading="lazy"></a>
+    <figcaption>Ling Xia and Allan M. Rubin, SCEC poster, “Bridging elastic and stochastic modeling of slow slip.” <a href="pdf/poster.pdf">Open the full PDF</a>.</figcaption>
+  </figure>
+
+  <h2>Cite</h2>
+  <div class="cite"><p>Xia, L., &amp; Rubin, A. M. (2026). A simple discrete elastic model exhibits both the statistical properties and migration patterns of slow slip. <em>Journal of Geophysical Research: Solid Earth</em>, 131, e2026JB034106. <a href="https://doi.org/10.1029/2026JB034106">https://doi.org/10.1029/2026JB034106</a></p></div>
+</main>
+
+<footer>© 2026 Ling Xia · The paper is open access under a Creative Commons Attribution license.</footer>
+
+<script>
+document.getElementById("theme").addEventListener("click",function(){
+  var r=document.documentElement;
+  var dark=r.getAttribute("data-theme")==="dark"||(!r.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme: dark)").matches);
+  r.setAttribute("data-theme",dark?"light":"dark");
+  try{localStorage.setItem("theme",dark?"light":"dark")}catch(e){}
+});
+try{var s=localStorage.getItem("theme");if(s)document.documentElement.setAttribute("data-theme",s)}catch(e){}
+</script>
+</body>
+</html>
